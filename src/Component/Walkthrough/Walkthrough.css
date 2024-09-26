@@ -1,0 +1,72 @@
+.Walkthrough {
+  padding: 12rem 0 5rem 0rem;
+  width: 100%;
+  background-color: #D0D1CE;
+  position: relative;
+}
+
+.Walkthrough-main {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.Walkthrough-main h2 {
+  font-size: 30px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.walkthrough-item {
+  display: flex;
+  gap: 2rem;
+}
+
+.walkthrough-left {
+  width: 55%;
+  margin-top: 2rem;
+}
+
+
+.walkthrough-right {
+  width: 45%;
+  position: relative;
+  z-index: 2;
+}
+
+.walkthrough-form {
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: #D0D1CE;
+}
+.walkthrough-form h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  /* font-weight: 700; */
+}
+
+@media (min-width: 1200px) {
+  .Walkthrough-main {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .walkthrough-item {
+    flex-wrap: wrap;
+  }
+
+  .walkthrough-left,
+  .walkthrough-right {
+    width: 100%;
+  }
+
+  .category-card {
+    height: 200px;
+  }
+
+  .walkthrough-left {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

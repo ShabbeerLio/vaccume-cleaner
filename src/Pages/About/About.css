@@ -1,0 +1,29 @@
+.About {
+  /* padding: 5rem 0rem 0 0; */
+  width: 100%;
+  /* background-color: #f1f1f1; */
+}
+
+.About-main {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.About .aboutUs {
+  padding: 5rem 0rem 12rem 0;
+}
+.About .CallAction {
+  padding: 20rem 0rem 6rem 0;
+}
+
+@media (min-width: 1200px) {
+  .About-main {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+}

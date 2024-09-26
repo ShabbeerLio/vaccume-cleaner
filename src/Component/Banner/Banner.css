@@ -1,0 +1,121 @@
+.banner img {
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+  /* filter: brightness(70%); */
+}
+
+.banner-image:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  display: inline-block;
+  opacity: 0.9;
+  background-image: linear-gradient(0deg, #00000070 0%, rgba(0, 0, 0, 0) 100%);
+}
+.banner {
+  margin-top: 75px;
+  position: relative;
+}
+
+.stickey img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner-stick{
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, 0);
+}
+
+.banner-stick-box{
+  /* background-color: white; */
+  color: white;
+  padding: 2rem 3rem;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+}
+
+.banner-stick-box h2{
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "Roboto";
+  color: white;
+  line-height: 12px;
+}
+.banner-stick-box h1{
+  margin-bottom: 1rem;
+  font-size: 80px;
+  font-weight: 700;
+  color: white;
+  font-family: "Roboto";
+  line-height: 105px;
+}
+.banner-stick-box h5{
+  margin: 10px 0px;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Roboto";
+}
+.banner-stick-box p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-stick-box p a{
+  text-decoration: none;
+  color: white;
+  background-color: #008e98;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin: 0;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.banner-stick-box p svg{
+  margin-left: 10px;
+}
+.banner-stick-box p span{
+  font-size: 35px;
+  font-weight: 500;
+  color: #008e98;
+}
+
+@media only screen and (max-width: 680px) {
+  .banner img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .banner-stick{
+    background-color: #c4cacb;
+    position: relative;
+    z-index: 1;
+  }
+
+  .banner-stick-box{
+    padding: 1rem ;
+  }
+
+  .banner-stick-box h1{
+    margin-bottom: 1rem;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    font-family: "Roboto";
+    line-height: 70px;
+  }
+}

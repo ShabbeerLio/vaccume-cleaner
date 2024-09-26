@@ -1,0 +1,104 @@
+.Work {
+  padding: 6rem 0rem 12rem 0;
+  background: white;
+  width: 100%;
+  position: relative;
+}
+
+.Work-main {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Work-box {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+.Work-box-left {
+  width: 40%;
+  position: relative;
+  height: 100%;
+  margin-top: 2rem;
+}
+
+.Work-box-left img{
+  width: 100%;
+  object-fit: cover;
+  margin: 2rem 0;
+}
+
+.Work-box-right{
+  width: 60%;
+}
+
+
+.accordion-button {
+  padding: 1rem 0;
+}
+
+.accordion-body {
+  padding: 1rem 0rem;
+  color: black;
+}
+
+.accordion-flush .accordion-item {
+  background: white;
+  color: black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.527) !important;
+}
+
+.accordion-flush .accordion-item .accordion-button {
+  background: white;
+  color: black;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: white;
+  outline: 0;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: grayscale(1);
+}
+
+@media (min-width: 1200px) {
+  .Work-main {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .Work-box {
+    flex-wrap: wrap;
+  }
+
+  .Work-box-left {
+    width: 100%;
+  }
+  .Work-box-right {
+    width: 100%;
+  }
+
+  .work-left-box2 {
+    padding: 3rem;
+  }
+
+  .Work-box-right-title h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.7;
+  }
+
+  .Work-box-right-btun p {
+    justify-content: center;
+    width: 100%;
+  }
+}
